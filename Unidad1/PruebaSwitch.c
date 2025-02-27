@@ -17,5 +17,5 @@ int main () {
         printf("%s\n","No ha selecionado una opcion valida");
         break;
     }
-   else 0;
+   return 0;
 }
