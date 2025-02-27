@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     printf("%s","%d imprime datos decimales: 5.4\n");
-    printf("%s","%i imprime datos enteros: 2\n",2);
+    printf("%s","%i imprime datos enteros: 2\n");
     printf("%s","%o imprime datos octales: 6\n");
     printf("%s","%x imprime datos hexadecimales: 8A1\n");
     printf("%s","%u imprime datos enteros sin signo en decimal: 23\n");
