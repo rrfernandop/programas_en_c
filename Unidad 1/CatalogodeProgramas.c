@@ -238,25 +238,168 @@ int main () {
         }
         break;
         case 14:
-        printf("%s\n","");
+        printf("%s\n","Ha seleccionado Promedio leer datos");
+        char nombre2 [50];
+    printf("%s\n","Ingrese su nombre");
+    scanf("%s",& nombre2);
+
+    int calif1; 
+    printf("%s\n","Ingrese calif1");
+    scanf("%d",&calif1);
+
+
+    int calif2; 
+    printf("%s\n","Ingrese calif2");
+    scanf("%d",&calif2);
+
+    int calif3; 
+    printf("%s\n","Ingrese calif3");
+    scanf("%d",&calif3);
+
+    float promedio2 = (calif1+calif2+calif3)/3;
+    //Resultados
+    printf("%s%s\n","Nombre: ",nombre2);
+    printf("%s%.2f\n","Promedio: ",promedio2);
+
+    if (promedio2 >=6){
+        printf("%s\n","APROBADO");
+    } else {
+        printf("%s\n","REPROBADO");
+    }
         break;
         case 15:
-        printf("%s\n","");
+        printf("%s\n","He seleccionado Volumen de una esfera");
+        float radio;
+        float altura;
+        float volumen;
+        float pi=3.1416;
+        float areatotal;
+        float hipotenusa;
+
+        printf("Dame el valor de la altura\n");
+        scanf("%f",&altura);
+        printf("%s\n","Dame el valor del radio");
+        scanf("%f",&radio);
+
+        hipotenusa=(radio*radio)+(altura*altura);
+        areatotal=(pi*radio*radio)+(pi*radio*hipotenusa);
+        volumen=(pi*radio*radio*altura)/3;
+        
+        printf("El volumen es: \n %f\n", volumen);
+        printf("El area total es: \n %.2f \n",areatotal);
+
+        return 0;
         break;
         case 16:
-        printf("%s\n","");
+        printf("%s\n","Ha seleccionado Volumen de un cono");
+        float radion;
+        float alturan;
+        float volumenn;
+        float pin=3.1416;
+        float areatotaln;
+        float hipotenusan;
+
+        printf("Dame el valor de la altura\n");
+        scanf("%f",&alturan);
+        printf("%s\n","Dame el valor del radio");
+        scanf("%f",&radion);
+
+        hipotenusan=(radion*radion)+(alturan*alturan);
+        areatotaln=(pin*radion*radion)+(pin*radion*hipotenusan);
+        volumenn=(pin*radion*radion*alturan)/3;
+        
+        printf("El volumen es: \n %f\n", volumenn);
+        printf("El area total es: \n %.2f \n",areatotaln);
+        return 0;
         break;
         case 17:
-        printf("%s\n","");
+        printf("%s\n","Ha seleccionado Volumen de un cilindro");
+        float hc;
+        float radioc;
+        float pic=3.1416;
+        float volumenc;
+        float areac;
+
+        printf("%s\n", "Ingresa el valor de la altura de tu cilindro");
+        scanf("%f", &hc);
+        printf("%s\n", "Ingresa el radio de la circunferencia de tu cilindro");
+        scanf("%f", &radioc);
+
+        volumenc =(pic*radioc*radioc*hc);
+        areac = ((2*pic)*(radioc*hc)+(2*pic*radioc*radioc));
+
+        printf("%s%.4f\n", "El volumen es \n", volumenc);
+        printf("%s%.2f\n", "El area es: \n", areac);
+        return 0;
         break;
         case 18:
-        printf("%s\n","");
+        printf("%s\n","Ha seleccionado Prueba switch");
+        int opc;
+    printf("%s\n","Por favor, seleccione una opción");
+    printf("%s\n","1.- Sumar");
+    printf("%s\n","2.- Restar");
+    scanf("%d", & opc);
+
+    switch(opc){
+        case 1:
+        printf("%s\n","Ha selecionado suma");
         break;
-        case 19:
-        printf("%s\n","");
+        case 2:
+        printf("%s\n","Ha selecionado resta");
         break;
         default:
         printf("%s\n","No ha selecionado una opcion valida");
+        break;
+    }
+   return 0;
+        break;
+        case 19:
+        printf("%s\n","Ha seleccionado Calculadora");
+        float num1, num2;
+    int ope;
+    float resultado;
+    printf("%s", "BIENVENIDO A LA CALCULADORA");
+    printf("%s", "Ingresa el numero 1: ");
+    scanf("%f", &num1);
+    printf("%s", "Ingresa el numero 2: ");
+    scanf("%f", &num2);
+
+    printf("%s\n", "Indica una operación");
+    printf("%s\n", "1: Sumar");
+    printf("%s\n", "2: Restar");
+    printf("%s\n", "3: Multiplicar");
+    printf("%s\n", "4: Division");
+    scanf("%d", &ope);
+
+    switch(ope){
+        case 1:
+            resultado=num1+num2;
+            printf("%s\n%.5f", "El resultado de los dos numeros sumados es:", resultado);
+            break;
+
+        case 2:
+            resultado=num1-num2;
+            printf("%s\n%.5f", "El resultado de los numeros restados es:", resultado);
+            break;
+
+        case 3:
+            resultado=num1*num2;
+            printf("%s\n%.5f", "El resultado de la multiplicación es:", resultado);
+            break;
+            
+        case 4:
+            resultado=num1/num2;
+            printf("%s\n%.5f", "El resultado de la division es:", resultado);
+            break;
+
+        default:
+            printf("%s", "Selecciona un caracter correcto");
+            break;
+    }
+return 0;
+        break;
+        default:
+        printf("%s\n","No ha selecionado una opción valida");
         break;
         
 
