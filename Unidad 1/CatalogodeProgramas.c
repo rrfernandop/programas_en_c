@@ -125,25 +125,117 @@ int main () {
          return 0;
         break;
         case 7:
-        printf("%s\n","");
+        printf("%s\n","Ha seleccionado Cuadro de numeros\n");
+        printf("\n%s\n", "Ejemplo de impresion");
+        int limitesy =0;
+            while (limitesy <= 10) {
+                int limitesx = 0;
+                while (limitesx <= 10){
+                    printf("%4d", limitesx);
+                    limitesx++;
+                }
+                    printf("\n");
+                    limitesy++;
+            }
         break;
         case 8:
-        printf("%s\n","");
+        printf("%s\n","Ha seleccionado cuadrado de asteristcos");
+        for (int a=0;a<=9;a++){
+            printf("%3s","*");
+        }
+        printf("\n");
+        for(int b=1;b<=7;b++){
+            printf("%3s","*");
+    
+            for (int c=1;c<=8;c++){
+                printf("%3s","");
+            }
+    
+            printf("%3s","*");
+            printf("\n");
+    
+        }
+        for (int a=0;a<=9;a++){
+            printf("%3s","*");
+        }
+    return 0;
         break;
         case 9:
-        printf("%s\n","");
+        printf("%s\n","Ha seleccionado triangulo rectangulo");
+        int asteriscos=1;
+          for (int i3=6 ; i3>=0;i3--) {
+          for (int k3=6; k3>= asteriscos; k3--){
+          printf("%5s", " ");
+        }
+          for (int j3=1; j3<= asteriscos; j3++) {
+          printf("%5s", "*");
+        }
+          asteriscos++;
+          printf("\n");
+        }
+        return 0;  
         break;
         case 10:
-        printf("%s\n","");
+        printf("%s\n","Ha seleccionado Triangulo rectangulo 2");
+        int asteriscos2=1;
+            for (int i2=6 ; i2>=0;i2--) {
+            for (int j2=1; j2<= asteriscos2; j2++) {
+            printf("%5s", "*");
+            } 
+            asteriscos2++;
+            printf("\n");
+            }
+            return 0;
         break;
         case 11:
-        printf("%s\n","");
+        printf("%s\n","Ha seleccionado Triangulo equilatero");
+        int espacios1=6 ; int asteriscos1=1;
+             for (int i1=6; i1>=0; i1--) {
+             for (int j1=1; j1<=espacios1; j1++) {
+             printf ( "%4s", "");
+            }   
+            espacios1--;
+             for (int k1=1; k1<=asteriscos1; k1++){
+             printf ("%4s", "*");
+            }
+             asteriscos1=asteriscos1+2;
+             printf ("\n");
+            }
+            return 0; 
         break;
         case 12:
-        printf("%s\n","");
+        printf("%s\n","Ha seleccionado Trapecio\n");
+        int espacios= 3;
+        int asterisco = 3;
+        for(int i=3; i>=0; i--){
+            for(int j=1; j<= espacios; j++){
+                printf("%4s"," ");
+            }
+            espacios--;
+            for(int k=1; k<=asterisco; k++){
+                printf("%4s","*");
+            }
+            //asterisco = asterisco + 2;
+            asterisco +=2;
+            printf("\n");
+            
+        }
         break;
         case 13:
-        printf("%s\n","");
+        printf("%s\n","Ha seleccionado Tabla de multiplicar");
+        int tabla = 0;
+        while(tabla <=10){
+            int numero = 0;
+            printf("%s\n\n","");
+            while (numero<= 10){
+                int mul = (numero * tabla);
+                                                                                        
+                printf("%s%d%s%d%s%d\n", "(",tabla,")()",numero,")=",mul);
+                numero++;
+            }
+        
+            tabla++;
+        }
         break;
         case 14:
         printf("%s\n","");
