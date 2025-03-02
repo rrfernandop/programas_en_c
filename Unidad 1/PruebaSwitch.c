@@ -3,7 +3,7 @@ int main () {
     int opc;
     printf("%s\n","Por favor, seleccione una opción");
     printf("%s\n","1.- Sumar");
-    printf("%s\n","1.- Restar");
+    printf("%s\n","2.- Restar");
     scanf("%d", & opc);
 
     switch(opc){
