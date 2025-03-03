@@ -7,7 +7,7 @@
 
 int main(){
     int size;
-    printf("Ingrese el tamaño del arreglo");
+    printf("Ingrese el tamaño del arreglo \n");
     scanf("%d",&size);
 
     int arregloNumeros[size];
@@ -17,6 +17,11 @@ int main(){
         int swap;
         scanf("%d",&swap);
         arregloNumeros[1] = swap;
+    }
+
+    //imprimiendo valores del arreglo
+    for (int i= 0; i<size; i++){
+        printf("arreglo[%d] = %d\n", i, arregloNumeros[i]);
     }
     return 0;
 }
