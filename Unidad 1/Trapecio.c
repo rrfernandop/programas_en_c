@@ -4,10 +4,10 @@ int main() {
 int espacios= 3;
 int asterisco = 3;
 for(int i=3; i>=0; i--){
-    for(int j=1; j<= espacios; j++){
-        printf("%4s"," ");
+    for(int j2=1; j2<= espacios; j2++){
+        printf("%4s"," e");
     }
-    espacios--;
+    espacios++;
     for(int k=1; k<=asterisco; k++){
         printf("%4s","*");
     }

@@ -1,16 +1,16 @@
 #include <stdio.h>
 int main (){
-    int espacios1=6 ; 
-    int asteriscos1=1;
-             for (int i1=6; i1>=0; i1--) {
-             for (int j1=1; j1<=espacios1; j1++) {
+    int espacios=6 ; 
+    int asteriscos=1;
+             for (int i=6; i>=0; i--) {
+             for (int j=1; j<=espacios; j++) {
              printf ( "%4s", "");
             }   
-            espacios1--;
-             for (int k1=1; k1<=asteriscos1; k1++){
+            espacios--;
+             for (int k=1; k<=asteriscos; k++){
              printf ("%4s", "*");
             }
-             asteriscos1=asteriscos1+2;
+             asteriscos=asteriscos+2;
              printf ("\n");
             }
 }
