@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ponce/Documents/GitHub/programas_en_c/Unidad 2/output/matrizColumnas'
+relocations:     []
+...
