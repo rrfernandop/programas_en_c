@@ -16,7 +16,7 @@ int main (){
         {3,7,-6,0,0.0,0.0,""}
     };
     for(int i=0; i<2; i++){
-        int d = (arreglo[1].b * arreglo[i].b)-4*arreglo[i].a*arreglo[i].c;
+        int d = (arreglo[i].b * arreglo[i].b)-4*arreglo[i].a*arreglo[i].c;
         if (d<0){
             strcpy (arreglo[i].solucion, "No tiene solución");
         }else{

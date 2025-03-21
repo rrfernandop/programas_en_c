@@ -82,14 +82,14 @@ int main () {
         case 5:
         printf("%s\n","Ha seleccionado Temperatura (flotante)");
         float fahr2, celsius2;
-        float lower2, upper2, step2; 
+        float lower2, upperi2, step2; 
     
         lower2 = 0; 
-        upper2 = 300;
+        upperi2 = 300;
         step2 = 20; 
     
         fahr2 = lower2;
-        while (fahr2 <= upper2) { 
+        while (fahr2 <= upperi2) { 
             celsius2 = 5.0 * (fahr2 - 32.0) / 9.0; 
             printf("%.0f\t%.2f\n", fahr2, celsius2); 
             fahr2 = fahr2 + step2; 
