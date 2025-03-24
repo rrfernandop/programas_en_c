@@ -15,25 +15,15 @@ int main() {
     };
 
 
-    printf("\n   |");
-    for (int j = 0; j < COLUMNAS; j++) {
-        printf(" %2d |", j + 1);
-    }
-    printf("\n");
-    printf("-------------------------------------------\n");
-
-
     for (int i = 0; i < FILAS; i++) {
-        printf("%2d |", i + 1); 
         for (int j = 0; j < COLUMNAS; j++) {
             if (j % 2 == 0) {  
-                printf(" %2d |", matriz[i][j]);
-            } else { 
-                printf("  # |");
+                printf("%2d ", matriz[i][j]);
+            } else {  
+                printf(" # ");
             }
         }
-        printf("\n-------------------------------------------\n");
-    }
-
-    return 0;
+        printf("\n");  
+}
+return 0;
 }
