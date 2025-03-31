@@ -21,3 +21,4 @@ int main() {
  
     return 0;
 }
+// & recuperar el lugar de memoria donde esta l;a variable 
