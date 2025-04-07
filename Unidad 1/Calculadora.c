@@ -9,32 +9,32 @@ int main() {
     printf("%s", "Ingresa el numero 2: ");
     scanf("%f", &num2);
 
-    printf("%s\n", "Indica una operación");
-    printf("%s\n", "1: Sumar");
-    printf("%s\n", "2: Restar");
-    printf("%s\n", "3: Multiplicar");
-    printf("%s\n", "4: Division");
+    printf("%s ", "Indica una operación");
+    printf("%s ", "1: Sumar");
+    printf("%s ", "2: Restar");
+    printf("%s ", "3: Multiplicar");
+    printf("%s ", "4: Division");
     scanf("%d", &ope);
 
     switch(ope){
         case 1:
             resultado=num1+num2;
-            printf("%s\n%.5f", "El resultado de los dos numeros sumados es:", resultado);
+            printf("%s %.5f", "El resultado de los dos numeros sumados es:", resultado);
             break;
 
         case 2:
             resultado=num1-num2;
-            printf("%s\n%.5f", "El resultado de los numeros restados es:", resultado);
+            printf("%s %.5f", "El resultado de los numeros restados es:", resultado);
             break;
 
         case 3:
             resultado=num1*num2;
-            printf("%s\n%.5f", "El resultado de la multiplicación es:", resultado);
+            printf("%s %.5f", "El resultado de la multiplicación es:", resultado);
             break;
             
         case 4:
             resultado=num1/num2;
-            printf("%s\n%.5f", "El resultado de la division es:", resultado);
+            printf("%s %.5f", "El resultado de la division es:", resultado);
             break;
 
         default:
