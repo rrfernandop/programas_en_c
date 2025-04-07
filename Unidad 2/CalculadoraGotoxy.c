@@ -30,11 +30,14 @@ int main() {
     gotoxy(12, 7);
     setColor("\033[7;34m");
     printf("%s ", "1:");
+
     setColor("\033[0m");
     printf("%s ", " Sumar");
+
     gotoxy(12, 8);
     setColor("\033[7;36m");
     printf("%s ", "2:");
+    
     setColor("\033[0m");
     printf("%s ", " Restar ");
     gotoxy(12, 9);
