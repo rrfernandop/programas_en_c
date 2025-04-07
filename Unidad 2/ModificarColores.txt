@@ -1,0 +1,18 @@
+
+ Codigos de colores:
+30 Negro
+31 Rojo
+32 Verde
+33 Amarillo
+34 Azul
+35 Magenta
+36 Cyan
+37 Blanco
+
+Opciones de estilo:
+0 Normal
+1 Negrita
+4 Subrayado
+7 Invertir Colores
+
+setColor("\033[1;37m");
