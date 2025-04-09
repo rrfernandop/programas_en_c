@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define TOTAL 7
+#define TOTAL 8
 
 const char* colores[TOTAL] = {
     "\033[7;30m", 
