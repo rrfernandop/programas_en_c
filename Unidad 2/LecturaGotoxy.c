@@ -30,7 +30,7 @@ int main() {
     scanf("%d", &edad);
  
     gotoxy(10, 9);
-    printf("Hola %s, tienes %d años.\n", nombre, edad);
+    printf("Hola %s, tienes %d años. ", nombre, edad);
  
     return 0;
 }

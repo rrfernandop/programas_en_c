@@ -14,7 +14,7 @@ int main() /* Método principal */
     fahr = lower;
     while (fahr <= upper) { 
         celsius = 5.0 * (fahr - 32.0) / 9.0; 
-        printf("%.0f\t%.2f\n", fahr, celsius); 
+        printf("%.0f\t%.2f ", fahr, celsius); 
         fahr = fahr + step; 
     } 
 

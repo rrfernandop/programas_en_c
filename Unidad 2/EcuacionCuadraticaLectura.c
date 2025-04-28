@@ -12,19 +12,19 @@ struct EcCuadratica { //Declaro mi estructura
 };
 int main (){
     int size;//variable para el tamano del arreglo
-    printf("Ingrese el tamaño del arreglo \n");//pedir el tamano del arreglo
+    printf("Ingrese el tamaño del arreglo  ");//pedir el tamano del arreglo
     scanf("%d",&size);
     struct EcCuadratica arreglo[size]; //arreglo de estructuras
     
     for(int i=0; i<size; i++){
 
-        printf("Ingrese a: \n"); //impresion y lectura 
+        printf("Ingrese a:  "); //impresion y lectura 
         scanf(" %d",&arreglo[i].a); 
 
-        printf("Ingrese b: \n");
+        printf("Ingrese b:  ");
         scanf(" %d",&arreglo[i].b); 
 
-        printf("Ingrese c: \n");
+        printf("Ingrese c:  ");
         scanf(" %d",&arreglo[i].c); 
 
 
@@ -37,10 +37,10 @@ int main (){
            strcpy (arreglo[i].solucion, "  Tiene solución");
         }
     } // impresión de la tabla
-    printf("%s\t | %s\t | %s\t | %s\t | %s\t | %s\n", "a","b", "c","x1","x2","solucion");
+    printf("%s\t | %s\t | %s\t | %s\t | %s\t | %s ", "a","b", "c","x1","x2","solucion");
     for (int i=0; i<size; i++){
 
-        printf("%d\t |%d\t | %d\t| %.2f\t|%.2f\t|%s\n",
+        printf("%d\t |%d\t | %d\t| %.2f\t|%.2f\t|%s ",
             arreglo[i].a,
             arreglo[i].b,
             arreglo[i].c,

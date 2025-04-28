@@ -107,7 +107,8 @@ int main() {
     int matriz_b[3][3];
     int matriz_suma[3][3];
     int matriz_resta[3][3];
-    int matriz_ alar[3][3];
+    int matriz_escalar[3][3];
+
 
     llenarMatriz("Matriz A", matriz_a);
     llenarMatriz("Matriz B", matriz_b);

@@ -15,7 +15,7 @@ float dividir(int a, int b){
 }
 
 void imprimir (int a, int b, int c, float d){
-    printf("\n Resultado de la suma: %d \n Resta: %d \n Multiplicacion: %d \nDivivsion: %.2f",a,b,c,d);
+    printf("  Resultado de la suma: %d   Resta: %d   Multiplicacion: %d  Divivsion: %.2f",a,b,c,d);
 }
 
 int main (){

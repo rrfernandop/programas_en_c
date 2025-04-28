@@ -12,6 +12,6 @@ struct Persona {
 
 int main () {
     struct Persona persona1 = {"Carlos Ramírez",{"Av. Reforma", 123}};
-    printf("Nombre: %s\n", persona1.nombre);
-    printf("Domicilio: %s #%d\n", persona1.domicilio.calle, persona1.domicilio.numero);
+    printf("Nombre: %s ", persona1.nombre);
+    printf("Domicilio: %s #%d ", persona1.domicilio.calle, persona1.domicilio.numero);
 }

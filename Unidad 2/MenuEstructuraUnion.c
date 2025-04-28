@@ -29,7 +29,7 @@ Celda matriz [FILAS] [COLUMNAS];
 
 for (int i = 0; i < FILAS; i++) {
     for (int j = 0; j < COLUMNAS; j++) {
-        printf("\nSELECCIONA \n\n 1.- Perro \n 2.- Gato\n");
+        printf(" SELECCIONA    1.- Perro   2.- Gato ");
         int opc = 0;
         scanf("%d", &opc);
         
@@ -59,20 +59,20 @@ for (int i = 0; i < FILAS; i++) {
                 break;
             }
             default:
-                printf("Ingresa una opcion correcta\n");
+                printf("Ingresa una opcion correcta ");
                 break;
         }
     }
 }
-printf("\nDatos:\n");
+printf(" Datos: ");
     for (int i = 0; i < FILAS; i++) {
         for (int j = 0; j < COLUMNAS; j++) {
             if (matriz[i][j].tipo == 1) {
-                printf("Perro - Nombre: %s Raza: %s\n",
+                printf("Perro - Nombre: %s Raza: %s ",
                     matriz[i][j].valor.perro.perro,
                     matriz[i][j].valor.perro.raza);
             }  else if (matriz[i][j].tipo == 2) {
-                printf("Gato - Nombre: %s Raza: %s\n",
+                printf("Gato - Nombre: %s Raza: %s ",
                     matriz[i][j].valor.gato.nombre,
                     matriz[i][j].valor.gato.raza);
     }

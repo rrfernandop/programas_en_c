@@ -29,39 +29,39 @@ int main(){
     struct Estudiantes arreglo[size];
 
     for (int i =0; i<size;i++){
-        printf("\nIngrese los datos del estudiante %d\n",i+1);
+        printf(" Ingrese los datos del estudiante %d ",i+1);
 
-        printf("id: \n");
+        printf("id:  ");
         scanf("%d",&arreglo[i].id);
 
-        printf("Nombre: \n");
+        printf("Nombre:  ");
         scanf("%s",&arreglo[i].nombre);
 
     
-         printf("Colonia: \n");
+         printf("Colonia:  ");
          scanf("%s",&arreglo[i].vivienda.colonia);
  
         
-         printf("Calle: \n");
+         printf("Calle:  ");
          scanf("%s",arreglo[i].vivienda.domicilio.calle);
  
          
-         printf("Numero: \n");
+         printf("Numero:  ");
          scanf("%s",arreglo[i].vivienda.domicilio.num);
  
-         printf("Codigo Postal: \n");
+         printf("Codigo Postal:  ");
          scanf("%d",&arreglo[i].vivienda.domicilio.cp);
     }
 
     //impresiones 
-    printf("\nEstudiantes:\n");
+    printf(" Estudiantes: ");
     for (int i = 0; i < size; i++)
     {
-        printf("\nEstudiante %d:\n", i + 1);
-        printf("Id:%d\n", arreglo[i].id);
-        printf("Nombre: %s\n", arreglo[i].nombre);
+        printf(" Estudiante %d: ", i + 1);
+        printf("Id:%d ", arreglo[i].id);
+        printf("Nombre: %s ", arreglo[i].nombre);
 
-        printf("Direccion:\n Colonia: %s, Calle: %s, NumCasa: %s, Código Postal: %d\n",arreglo[i].vivienda.colonia, arreglo[i].vivienda.domicilio.calle,arreglo[i].vivienda.domicilio.num, arreglo[i].vivienda.domicilio.cp);
+        printf("Direccion:  Colonia: %s, Calle: %s, NumCasa: %s, Código Postal: %d ",arreglo[i].vivienda.colonia, arreglo[i].vivienda.domicilio.calle,arreglo[i].vivienda.domicilio.num, arreglo[i].vivienda.domicilio.cp);
     }
     return 0;
 }

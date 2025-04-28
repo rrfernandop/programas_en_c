@@ -4,7 +4,7 @@ int main () {
              // Calcular el promedio
              int promedio = (cal1 + cal2 + cal3) / 3;
              // Mostrar el resultado
-             printf("Las calificaciones son: %.1d, %.1d, %.1d\n", cal1, cal2, cal3);
-             printf("El promedio es: %.2d\n", promedio);
+             printf("Las calificaciones son: %.1d, %.1d, %.1d ", cal1, cal2, cal3);
+             printf("El promedio es: %.2d ", promedio);
              return 0;
 }

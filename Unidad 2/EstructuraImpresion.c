@@ -20,24 +20,24 @@ int main () {
     struct Persona personas [n];
 
     for (int i=0; i<n; i++) {
-        printf("\nIngrese los datos de la persona %d :\n",i+1);
+        printf(" Ingrese los datos de la persona %d : ",i+1);
 
         printf("Nombre: ");
-        scanf(" %[^\n]",personas[i].nombre);
+        scanf(" %[^ ]",personas[i].nombre);
 
         printf("Calle: ");
-        scanf(" %[^\n]",personas[i].domicilio.calle);
+        scanf(" %[^ ]",personas[i].domicilio.calle);
 
         printf("Número: ");
-        scanf(" %[^\n]",&personas[i].domicilio.numero);
+        scanf(" %[^ ]",&personas[i].domicilio.numero);
         getchar();
     }
 
-    printf("\n%-20s | %-20s | %-10s\n","Nombre","Direccion","Número");
-    printf("----------------------------------------------------------\n");
+    printf(" %-20s | %-20s | %-10s ","Nombre","Direccion","Número");
+    printf("---------------------------------------------------------- ");
 
     for (int i=0; i<n; i++){
-        printf("%-20s | %-20s | %-10d\n",
+        printf("%-20s | %-20s | %-10d ",
             personas[i].nombre,
             personas[i].domicilio.calle,
             personas[i].domicilio.numero);

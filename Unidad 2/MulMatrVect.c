@@ -10,12 +10,12 @@ void llenar(int n, int matriz[n][n], char nombre) {
 }
 
 void imprimir(int n, int matriz[n][n], char nombre) {
-    printf("Matriz %c:\n", nombre);
+    printf("Matriz %c: ", nombre);
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             printf("%5d  ", matriz[i][j]);
         }
-        printf("\n");
+        printf(" ");
     }
 }
 

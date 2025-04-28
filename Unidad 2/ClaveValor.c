@@ -14,9 +14,9 @@ int main (){
         {"servidor", "localhost"}
     };
 
-    printf("Tabla Clave-valor:\n");
+    printf("Tabla Clave-valor: ");
     for (int i = 0; i<3; i++){
-        printf("%s: %s\n", tabla[i].clave, tabla[i].valor);
+        printf("%s: %s ", tabla[i].clave, tabla[i].valor);
     }
     return 0;
 }

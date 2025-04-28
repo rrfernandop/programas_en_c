@@ -15,7 +15,7 @@ int main() {
     printf("Ingrese el precio de conversión: ");
     scanf("%f", &precio);
 
-    printf("El equivalente es: %.2f %s\n", divisa(cantidad, precio), moneda);
+    printf("El equivalente es: %.2f %s ", divisa(cantidad, precio), moneda);
 
     return 0;
 }

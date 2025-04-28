@@ -10,12 +10,12 @@ int main() {
         {7, 8, 9}
     };
 
-    printf("Recorriendo la matriz: \n");
+    printf("Recorriendo la matriz:  ");
     for (int i = 0; i < FILAS; i++) {
         for(int j = 0; j < COLUMNAS; j++){
             printf("%d", matriz [i][j]);
         }
-        printf("\n");
+        printf(" ");
     }
     return 0;
 }

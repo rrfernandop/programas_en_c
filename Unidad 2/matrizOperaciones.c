@@ -15,12 +15,12 @@ int main() {
 
             printf("Imgresa un numero: ");
             scanf("%f", &num2[i][j]);
-            printf("\n");
+            printf(" ");
         }
     }
 
-    printf("\n|%10s\t|%10s\t|%10s\t|%10s\t|%15s\t|%10s\t|\n","num1", "num2", "suma", "resta", "multiplicacion", "division");
-    printf("------------------------------------------------------------------------------------------------------------------------\n");
+    printf(" |%10s\t|%10s\t|%10s\t|%10s\t|%15s\t|%10s\t| ","num1", "num2", "suma", "resta", "multiplicacion", "division");
+    printf("------------------------------------------------------------------------------------------------------------------------ ");
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
             float suma = num1[i][j] + num2[i][j];
@@ -28,7 +28,7 @@ int main() {
             float mult = num1[i][j] * num2[i][j];
             float div = num1[i][j] / num2[i][j];
 
-            printf("|%10.2f\t|%10.2f\t|%10.2f\t|%10.2f\t|%15.2f\t|%10.2f\t|\n", num1[i][j], num2[i][j], suma, resta, mult, div);
+            printf("|%10.2f\t|%10.2f\t|%10.2f\t|%10.2f\t|%15.2f\t|%10.2f\t| ", num1[i][j], num2[i][j], suma, resta, mult, div);
         }
     }
 

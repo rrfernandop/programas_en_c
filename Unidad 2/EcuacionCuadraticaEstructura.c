@@ -25,9 +25,9 @@ int main (){
            strcpy (arreglo[i].solucion, "Tiene solución:");
         }
     }
-    printf("%s-10 | %s | %s | %s | %s | %s\n", "a","b", "c","x1","x2","solucion");
+    printf("%s-10 | %s | %s | %s | %s | %s ", "a","b", "c","x1","x2","solucion");
     for (int i=0; i<2; i++){
-        printf("%d |%d | %d| %.2f|%.2f|%s\n",
+        printf("%d |%d | %d| %.2f|%.2f|%s ",
             arreglo[i].a,
             arreglo[i].b,
             arreglo[i].c,

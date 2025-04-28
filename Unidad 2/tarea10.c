@@ -9,7 +9,7 @@ int main() {
     printf("Ingrese la temperatura en grados Kelvin: ");
     scanf("%f", &kelvin);
 
-    printf("La temperatura en grados Fahrenheit es: %.2f\n", kelvin_a_fahrenheit(kelvin));
+    printf("La temperatura en grados Fahrenheit es: %.2f ", kelvin_a_fahrenheit(kelvin));
 
     return 0;
 }

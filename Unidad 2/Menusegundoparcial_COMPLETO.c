@@ -2003,11 +2003,11 @@ void trianguloColores() {
     printf("Introduzca el numero de filas del triángulo: ");
     scanf("%d",&N);
     for(int i=1; i<=N; i++){
-        printf("%[0m");
+        printf("[0m");
         for(int espacios=1; espacios<= N-i;espacios++){
             printf(" ");
         }
-        printf("%[7;33m");
+        printf("[7;33m");
         for(int j=1; j<=i*2-1; j++){
             printf("*");
         }

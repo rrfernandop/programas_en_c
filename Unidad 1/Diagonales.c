@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    printf("%s","Diagonal normal:\n");
+    printf("%s","Diagonal normal: ");
         int tamano = 10;
          for (int i = 0; i < tamano; i++) {
          for (int j = 0; j < tamano; j++) {
@@ -10,11 +10,11 @@ int main(){
                 printf("%s"," ");
             }
             }
-        printf("%s","\n");
+        printf("%s"," ");
         }
 
-        printf("%s","\n");
-        printf("%s","Diagonal inversa:\n");
+        printf("%s"," ");
+        printf("%s","Diagonal inversa: ");
           for (int i = 0; i < tamano; i++) {
           for (int j = 0; j < tamano; j++) {
             if (i + j == tamano - 1) {
@@ -23,7 +23,7 @@ int main(){
                 printf("%s"," ");
             }
             }
-        printf("\n");
+        printf(" ");
         }
          return 0;
 }

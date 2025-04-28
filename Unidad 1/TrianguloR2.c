@@ -9,7 +9,7 @@ int main (){
             
             } 
             asteriscos++;
-            printf("\n");
+            printf(" ");
             for(int j2=1; j2<= espacios; j2++){
                 printf("%4s"," e");
             }

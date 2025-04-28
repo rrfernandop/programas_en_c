@@ -8,6 +8,6 @@ typedef struct { //firma de la estructura
 
 int main () {
     Estudiante estudiante1 = {"Maria Lopez", 22, 9.3};
-    printf("Nombre: %s\n", estudiante1.nombre);
+    printf("Nombre: %s ", estudiante1.nombre);
     return 0;
 }

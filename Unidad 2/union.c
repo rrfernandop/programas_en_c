@@ -20,13 +20,13 @@
     union Dato variable;
 
     variable.entero = 42;
-    printf("Entero: %d\n",variable.entero);
+    printf("Entero: %d ",variable.entero);
 
     variable.decimal = 3.14;
-    printf("Decimal: %.2f\n",variable.decimal);
+    printf("Decimal: %.2f ",variable.decimal);
 
     sprintf(variable.texto,"Hola C");
-    printf("Texto: %s\n", variable.texto);
+    printf("Texto: %s ", variable.texto);
 
     printf();
  }

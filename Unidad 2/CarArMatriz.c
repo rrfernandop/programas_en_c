@@ -29,12 +29,12 @@ void llenarMatriz(char matriz[][100], int raizNum) {
 }
 
 void imprimirMatriz(char matriz[][100], int raizNum) {
-    printf("\nMatriz:\n");
+    printf(" Matriz: ");
     for (int i = 0; i < raizNum; i++) {
         for (int j = 0; j < raizNum; j++) {
             printf("%c ", matriz[i][j]);
         }
-        printf("\n");
+        printf(" ");
     }
 }
 
@@ -49,11 +49,11 @@ void matrizAArreglo(char matriz[][100], char arreglo[], int raizNum) {
 }
 
 void imprimirArreglo(char arreglo[], int tamaño) {
-    printf("\nArreglo:\n");
+    printf(" Arreglo: ");
     for (int i = 0; i < tamaño; i++) {
         printf("%c ", arreglo[i]);
     }
-    printf("\n");
+    printf(" ");
 }
 
 int main() {
@@ -65,7 +65,7 @@ int main() {
     bool tieneRaiz = raiz(num);
 
     if (tieneRaiz == false) {
-        printf("El numero no tiene raiz\n");
+        printf("El numero no tiene raiz ");
         return 0;
     }
 

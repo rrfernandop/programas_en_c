@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void llenarMatriz(char *nombre, int filas, int columnas, int matriz[filas][columnas]) {
-    printf("Nombre de la matriz: %s\n", nombre);
+    printf("Nombre de la matriz: %s ", nombre);
 
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
@@ -14,7 +14,7 @@ void llenarMatriz(char *nombre, int filas, int columnas, int matriz[filas][colum
 void saveMatriz(int filas, int columnas, int matriz[filas][columnas]) {
     FILE *archivo = fopen("../matriz.txt", "w");
     if (archivo == NULL) {
-        printf("Error al abrir el archivo.\n");
+        printf("Error al abrir el archivo. ");
         return;
     }
 
@@ -22,21 +22,21 @@ void saveMatriz(int filas, int columnas, int matriz[filas][columnas]) {
         for (int j = 0; j < columnas; j++) {
             fprintf(archivo, "%d ", matriz[i][j]);
         }
-        fprintf(archivo, "\n");
+        fprintf(archivo, " ");
     }
     fclose(archivo);
-    printf("Matriz guardada en 'matriz.txt' exitosamente.\n");
+    printf("Matriz guardada en 'matriz.txt' exitosamente. ");
 }
 
 void imprimirMatriz(char *nombre, int filas, int columnas, int matriz[filas][columnas]) {
-    printf("Nombre de la matriz: %s\n", nombre);
-    printf("Matriz ingresada:\n");
+    printf("Nombre de la matriz: %s ", nombre);
+    printf("Matriz ingresada: ");
 
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
             printf("%4d ", matriz[i][j]);
         }
-        printf("\n");
+        printf(" ");
     }
 }
 

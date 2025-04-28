@@ -7,7 +7,7 @@ void imprimirMatriz(int matriz[maximo][maximo], int filas, int columnas) {
         for (int j = 0; j < columnas; j++) {
             printf("%5d ", matriz[i][j]);
         }
-        printf("\n");
+        printf(" ");
     }
 }
 
@@ -59,7 +59,7 @@ int main() {
     printf("Ingrese el exponente: ");
     scanf("%d", &exponente);
     elevarMatriz(matriz, resultado, exponente, filas, columnas);
-    printf("Resultado de la matriz elevada a la potencia %d:\n", exponente);
+    printf("Resultado de la matriz elevada a la potencia %d: ", exponente);
     imprimirMatriz(resultado, filas, columnas);
 
     return 0;

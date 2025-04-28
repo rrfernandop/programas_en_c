@@ -8,8 +8,8 @@ struct Estudiante{
 
 int main (){
     struct Estudiante estudiante1= {"Alejandro Díaz",24,8.5};
-    printf("Nombre: %s\n", estudiante1.nombre);
-    printf("Edad: %d\n", estudiante1.edad);
-    printf("Promedio: %.2f\n",estudiante1.promedio);
+    printf("Nombre: %s ", estudiante1.nombre);
+    printf("Edad: %d ", estudiante1.edad);
+    printf("Promedio: %.2f ",estudiante1.promedio);
     return 0;
 }

@@ -1,0 +1,243 @@
+/*Mostrar una matriz como tabla de colores
+Crea una matriz de enteros 5x5.
+
+Imprímela con gotoxy() y cambia de color cada fila.*/
+
+#include <stdio.h>
+
+void gotoxy(int x, int y) {
+    printf("\033[%d;%dH", y, x);
+}
+
+void setColor(const char* color) {
+    printf("%s", color);
+}
+
+void llenarmatriz(int matriz[5][5]){
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < 5; j++){
+            gotoxy(10, 5 + i * 2); 
+            setColor("\033[4;34m");
+            printf("Ingrese los valores para la posicion [%d] [%d]: ", i , j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+}
+
+void imprimirTabla(int matriz[5][5]) {
+    const char* colores[] = {
+        "\033[1;31m", // rojo
+        "\033[1;32m", // verde
+        "\033[1;33m", // amarillo
+        "\033[1;34m", // azul
+        "\033[1;35m"  // magenta
+    };
+    
+    int x = 15, y = 15;
+    setColor("\033[4;36m"); 
+    printf("  MATRIZ");
+    gotoxy(x, y);
+    printf("\n");
+    for (int i = 0; i < 5; i++) {
+        setColor(colores[i]);
+        gotoxy(x, y + 1 + i);
+        printf("|");
+        for (int j = 0; j < 5; j++) {
+            printf(" %2d |", matriz[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+void imprimirmatriz(int matriz[5][5]) {
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < 5; j++){
+            printf("%4d", matriz[i][j]);
+        }
+    }
+}
+
+int main(){
+
+    int matriz[5][5];
+
+    printf("\033[2J");
+    llenarmatriz(matriz);
+    printf("\n");
+    imprimirmatriz(matriz);
+    imprimirTabla(matriz);
+
+    setColor("\033[0m");
+
+    return 0;
+}
+
+
+
+
+
+Gente, ya practique un rato para lo de porgramacion y realice estos programas me dicen que les parecen a su amplio conocimiento de la materia
+
+/*Pida al usuario llenar una matriz.
+
+Dibuje esa matriz en forma de tabla (con gotoxy y colores).
+
+Calcule la suma de los elementos (usando una función).
+
+Todo separado en funciones (modularidad).*/
+
+#include <stdio.h>
+
+void gotoxy(int x, int y){
+    printf("\033[%d;%dH", y, x);
+}
+
+void setcolor(const char* color){
+    printf("%s", color);
+}
+
+void llenarMatriz(int filas, int columnas, int m[filas][columnas]) {
+    for(int i=0; i < filas; i++){
+        for(int j=0; j < columnas; j++){
+            printf("ingrese los valores para la posicion [%d] [%d]: ", i, j);
+            scanf("%d", &m[i][j]);
+        }
+    }
+}
+
+void imprimirtabla(int filas, int columnas, int m[filas][columnas]) {
+    setColor("\033[4;36m"); // Cian
+    gotoxy(x, y);
+    printf("  MATRIZ");
+
+    for (int i = 0; i < 5; i++) {
+        gotoxy(10, 2 + i*2 + j);        printf("|");
+        for (int j = 0; j < 5; j++) {
+            printf(" %2d |", m[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+void imprimirmatriz(int filas, int columnas, int m[filas][columnas]){
+
+    printf("Mariz ingresada: \n");
+    for(int i = 0; i < filas; i++) {
+        for(int j = 0; j < columnas; j++){
+            printf("%4d ", m[i][j]);
+        }
+        printf("\n");
+    }
+    
+}
+
+int sumarmatriz(int filas, int columnas, int m[filas][columnas]){
+    int suma = 0;
+    for (int i = 0; i < filas; i++){
+        for (int j = 0; j < columnas; j++){
+            suma += m[i][j];
+        }
+    }
+    return suma;
+}
+
+int main() {
+    int filas, columnas;
+    int total;
+
+    printf("\033[2J");
+
+    printf("Ingrese el la cantidad de filas: ");
+    scanf("%d", &filas);
+
+    printf("Ingrese la cantidad de columnas: ");
+    scanf("%d", &columnas);
+
+    int m_a[filas][columnas];
+
+    llenarMatriz(filas, columnas, m_a);
+    imprimirmatriz(filas, columnas, m_a);
+    imprimirtabla(filas, columnas, m_a);
+    
+    total = sumarmatriz(filas, columnas, m_a);
+    printf("El resultado de la suma es: %d\n", total);
+
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int filas, columnas;
+
+    // Solicitar dimensiones al usuario
+    printf("Introduce el número de filas: ");
+    scanf("%d", &filas);
+    printf("Introduce el número de columnas: ");
+    scanf("%d", &columnas);
+
+    // Validar que las dimensiones sean adecuadas para un marco
+    if (filas < 2 || columnas < 2) {
+        printf("El marco debe tener al menos 2 filas y 2 columnas.\n");
+        return 1;
+    }
+
+    // Dibujar el marco
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            // Si está en la primera o última fila, o en la primera o última columna
+            if (i == 0 || i == filas - 1 || j == 0 || j == columnas - 1) {
+                printf("*");
+            } else {
+                printf(" ");
+            }
+        }
+        printf("\n"); // Nueva línea al final de cada fila
+    }
+
+    return 0;
+}
+
+
+
+
+if (opc == 3) {
+    printf("\033[2J"); 
+    for (int i = 0; i < 20; i++) {
+        for (int j = 0; j < 50; j++) {
+          
+            if (i == 0 || i == 20 - 1 || j == 0 || j == 50 - 1) {
+                printf("*");
+            } else {
+                printf(" ");
+            }
+        }
+        printf("\n"); 
+    }
+    gotoxy(3, 13);
+    printf("Número para escalar la matriz: ");
+    gotoxy(22, 13);
+scanf("%d", &escalar);
+} 
+
+switch(opc){
+    case 1:
+    
+    break; 
+    case 2:
+    restaMatriz(matriz_a, matriz_b, matriz_resta);
+    break;
+    case 3:
+    mulMatriz(matriz_a, matriz_b, matriz_mul);
+break;
+case 4: 
+
+break;
+
+    default:
+    return 0;
+        break;
+}

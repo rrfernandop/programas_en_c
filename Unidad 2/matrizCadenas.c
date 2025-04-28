@@ -9,19 +9,19 @@ int main() {
 
     for (int i = 0; i < FILAS; i++) {
         for (int j = 0; j < COLUMNAS; j++) {
-            printf("Ingrese una palabra \n");
+            printf("Ingrese una palabra  ");
             scanf("%s", matriz[i][j]);
         }
     }
 
-    printf("\nMatriz de palabras:\n");
-    printf("-----------------------------------------\n"); 
+    printf(" Matriz de palabras: ");
+    printf("----------------------------------------- "); 
     for (int i = 0; i < FILAS; i++) {
         for (int j = 0; j < COLUMNAS; j++) {
             printf("| %-10s ", matriz[i][j]); 
         }
-        printf("|\n"); 
-        printf("----------------------------------------\n"); 
+        printf("| "); 
+        printf("---------------------------------------- "); 
     }
 
     return 0;

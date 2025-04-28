@@ -43,7 +43,7 @@ int main (){
     matriz[1][1].valor.producto.precio = 1377.99;
     matriz[1] [1].tipo = 2;
 
-    printf("Recorriendo la matriz de uniones con estructuras:\n");
+    printf("Recorriendo la matriz de uniones con estructuras: ");
 
 
 
@@ -51,11 +51,11 @@ for (int i = 0; i< FILAS; i++){
     for (int j=0; j< COLUMNAS; j++){
         printf("Celda [%d] [%d]: ",i, j);
         if(matriz[i][j].tipo == 1){
-            printf("Persona - Nombre: %s, Edad: %d\n",
+            printf("Persona - Nombre: %s, Edad: %d ",
             matriz[i][j].valor.persona.nombre,
             matriz[i][j].valor.persona.edad);
         } else if (matriz[i][j].tipo == 2){
-            printf("Producto - Nombre: %s, precio: %.2f\n",
+            printf("Producto - Nombre: %s, precio: %.2f ",
                 matriz[i][j].valor.producto.producto,
                 matriz[i][j].valor.producto.precio);
         }

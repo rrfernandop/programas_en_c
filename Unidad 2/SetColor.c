@@ -9,36 +9,36 @@ int main (){
     printf("\033[2J");
 
     setColor("\033[4;32m");
-    printf("\nBienvenido al programa con marco y colores!\n");
+    printf(" Bienvenido al programa con marco y colores! ");
 
     //RESTAURAR COLOR 
     setColor("\033[0m");
 
     setColor("\033[7;34m");
-    printf("\nBienvenido al programa con marco y colores!\n");
+    printf(" Bienvenido al programa con marco y colores! ");
 
     setColor("\033[0m");
 
     setColor("\033[4;34m");
-    printf("\nBienvenido al programa con marco y colores!\n");
+    printf(" Bienvenido al programa con marco y colores! ");
     
     setColor("\033[4;30m");
-    printf("\nR\n");
+    printf(" R ");
     setColor("\033[4;31m");
-    printf("\nU\n");
+    printf(" U ");
     setColor("\033[4;32m");
-    printf("\nB\n");
+    printf(" B ");
     setColor("\033[4;33m");
-    printf("\nI\n");
+    printf(" I ");
     setColor("\033[4;34m");
-    printf("\nC\n");
+    printf(" C ");
     setColor("\033[4;35m");
-    printf("\nH\n");
+    printf(" H ");
     setColor("\033[4;36m");
-    printf("\nO\n");
+    printf(" O ");
     setColor("\033[4;37m");
-    printf("\nT\n");
+    printf(" T ");
     setColor("\033[4;31m");
-    printf("\nA\n");
+    printf(" A ");
     return 0;
 }

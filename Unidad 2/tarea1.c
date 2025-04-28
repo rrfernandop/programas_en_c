@@ -19,7 +19,7 @@ int main () {
     printf("Ingrese el exponente: ");
     scanf("%d", &exponente);
 
-    printf("Resultado: %d\n", exponencial(base, exponente));
+    printf("Resultado: %d ", exponencial(base, exponente));
 
     return 0;
 }

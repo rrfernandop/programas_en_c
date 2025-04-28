@@ -27,16 +27,16 @@ int main () {
     struct Computadora computadoras [n];
 
     for (int i=0; i<n; i++) {
-        printf("\nIngrese los datos de la computadora %d :\n",i+1);
+        printf(" Ingrese los datos de la computadora %d : ",i+1);
 
         printf("Marca: ");
-        scanf(" %[^\n]", computadoras[i].marca);
+        scanf(" %[^ ]", computadoras[i].marca);
 
         printf("Modelo: ");
-        scanf(" %[^\n]", computadoras[i].modelo);
+        scanf(" %[^ ]", computadoras[i].modelo);
 
         printf("Sistema Operativo: ");
-        scanf(" %[^\n]", computadoras[i].sistemaOperativo);
+        scanf(" %[^ ]", computadoras[i].sistemaOperativo);
 
         printf("Pantalla (pulgadas): ");
         scanf("%f", &computadoras[i].pantalla);
@@ -45,10 +45,10 @@ int main () {
         scanf("%d", &computadoras[i].fabricacion);
 
         printf("Procesador: ");
-        scanf(" %[^\n]", computadoras[i].especificaciones.procesador);
+        scanf(" %[^ ]", computadoras[i].especificaciones.procesador);
 
         printf("Versión: ");
-        scanf(" %[^\n]", computadoras[i].especificaciones.version);
+        scanf(" %[^ ]", computadoras[i].especificaciones.version);
 
         printf("RAM (GB): ");
         scanf("%d", &computadoras[i].especificaciones.ram);
@@ -57,7 +57,7 @@ int main () {
         scanf("%d", &computadoras[i].especificaciones.almacenamiento);
 
         printf("Tipo de almacenamiento: ");
-        scanf(" %[^\n]", computadoras[i].especificaciones.tipoAlmacenamiento);
+        scanf(" %[^ ]", computadoras[i].especificaciones.tipoAlmacenamiento);
 
         printf("Frecuencia GHZ : ");
         scanf("%f", &computadoras[i].especificaciones.frecuencia);
@@ -73,12 +73,12 @@ int main () {
 
 
 
- printf("\n%-15s | %-15s | %-8s | %-10s | %-5s | %-10s | %-20s | %-5s | %-12s | %-5s | %-10s | %-8s\n",
+ printf(" %-15s | %-15s | %-8s | %-10s | %-5s | %-10s | %-20s | %-5s | %-12s | %-5s | %-10s | %-8s ",
         "Marca", "Modelo", "SO.", "Pantalla", "Año", "Procesador", "Versión", "RAM", "Almacenamiento", "Tipo", "Frecuencia", "Núcleos");
- printf("--------------------------------------------------------------------------------------------------------------------------\n");
+ printf("-------------------------------------------------------------------------------------------------------------------------- ");
 
  for (int i = 0; i < n; i++) {
-     printf("%-15s | %-15s | %-8s | %-10f | %-5d |%-10s | %-20s | %-5d | %-12d | %-10s | %-10f | %-8d\n",
+     printf("%-15s | %-15s | %-8s | %-10f | %-5d |%-10s | %-20s | %-5d | %-12d | %-10s | %-10f | %-8d ",
             computadoras[i].marca,
             computadoras[i].modelo,
             computadoras[i].sistemaOperativo,

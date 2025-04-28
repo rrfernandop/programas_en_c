@@ -13,7 +13,7 @@ int main (){
              printf ("%4s", "*");
             }
              asteriscos=asteriscos+2;
-             printf ("\n");
+             printf (" ");
             }
   
     int asteriscos1=18;
@@ -27,7 +27,7 @@ int main (){
         printf("%4s"," *");
     }
     asteriscos1-=2;
-    printf ("\n");
+    printf (" ");
 }
   
 }

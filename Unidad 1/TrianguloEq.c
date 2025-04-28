@@ -11,6 +11,6 @@ int main (){
              printf ("%4s", "*");
             }
              asteriscos=asteriscos+2;
-             printf ("\n");
+             printf (" ");
             }
 }

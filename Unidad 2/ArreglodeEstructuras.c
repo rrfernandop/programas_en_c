@@ -15,49 +15,49 @@ struct Persona {
 int main() {
     int size;
     
-    printf("Ingrese el tamaño del arreglo \n");
+    printf("Ingrese el tamaño del arreglo  ");
     scanf("%d", &size);
 
     struct Persona persona[size]; 
 
 
     for (int i = 0; i < size; i++) {
-        printf("\nIngrese los datos de la persona %d\n", i + 1);
+        printf(" Ingrese los datos de la persona %d ", i + 1);
 
-        printf("Ingrese su nombre: \n");
+        printf("Ingrese su nombre:  ");
         scanf(" %s",persona[i].nombre); 
 
-        printf("Ingrese su edad: \n");
+        printf("Ingrese su edad:  ");
          scanf("%d",&persona[i].edad);
 
-        printf("Ingrese su correo: \n");
+        printf("Ingrese su correo:  ");
         scanf(" %s",persona[i].correo);
 
-         printf("Ingrese su telefono: \n");
+         printf("Ingrese su telefono:  ");
         scanf("%s",persona[i].telefono);
 
-        printf("Ingrese su año de nacimiento: \n");
+        printf("Ingrese su año de nacimiento:  ");
         scanf("%s",persona[i].nac);
-        printf("Ingrese su genero: \n");
+        printf("Ingrese su genero:  ");
         scanf("%s",persona[i].genero);
-        printf("Ingrese su direccion: \n");
+        printf("Ingrese su direccion:  ");
         scanf("%s",persona[i].direc);
 
-        printf("Ingrese si padece una enfermedad: \n");
+        printf("Ingrese si padece una enfermedad:  ");
         scanf(" %s",persona[i].enf);
     }
 
 
     for (int i = 0; i < size; i++) {
-        printf("\nPersona %d: ", i + 1);
-        printf("Nombre: %s\n",persona[i].nombre);
-        printf("Edad: %d\n",persona[i].edad);
-        printf("Correo: %s\n", persona[i].correo);
-        printf("Telefono: %s\n",persona[i].telefono);
-        printf("Año de nacimiento: %s\n",persona[i].nac);
-        printf("Genero: %s\n",persona[i].genero);
-        printf("Direccion: %s\n",persona[i].direc);
-        printf("Enfermedad: %s\n",persona[i].enf);
+        printf(" Persona %d: ", i + 1);
+        printf("Nombre: %s ",persona[i].nombre);
+        printf("Edad: %d ",persona[i].edad);
+        printf("Correo: %s ", persona[i].correo);
+        printf("Telefono: %s ",persona[i].telefono);
+        printf("Año de nacimiento: %s ",persona[i].nac);
+        printf("Genero: %s ",persona[i].genero);
+        printf("Direccion: %s ",persona[i].direc);
+        printf("Enfermedad: %s ",persona[i].enf);
     }
 
     return 0;

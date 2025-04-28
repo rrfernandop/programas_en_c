@@ -8,9 +8,9 @@ struct cuadrado {
 
 int main() {
     int opc;
-    printf("Selecciona una opcion:\n");
-    printf("1.- cuadrilatero\n");
-    printf("2.- triangulo\n");
+    printf("Selecciona una opcion: ");
+    printf("1.- cuadrilatero ");
+    printf("2.- triangulo ");
     scanf("%d", &opc);
 
     switch (opc) {
@@ -33,8 +33,8 @@ int main() {
 
         float area = cd*da;
 
-        printf("Perimetro total: %.2f\n", perimetro);
-        printf("Area total: %.2f\n", area);
+        printf("Perimetro total: %.2f ", perimetro);
+        printf("Area total: %.2f ", area);
 
         break;
     }
@@ -56,13 +56,13 @@ int main() {
 
         float area = (ab*bc)/2;
 
-        printf("Perimetro total: %.2f\n", perimetro);
-        printf("Area total: %.2f\n", area);
+        printf("Perimetro total: %.2f ", perimetro);
+        printf("Area total: %.2f ", area);
 
         break;
     }
     default:
-        printf("Opcion no valida.\n");
+        printf("Opcion no valida. ");
         break;
     }
 

@@ -15,7 +15,7 @@ int main() {
     printf("Ingrese el segundo número: ");
     scanf("%d", &num2);
     
-    printf("El mayor es: %d\n", mayor(num1, num2));
+    printf("El mayor es: %d ", mayor(num1, num2));
     
     return 0;
 }

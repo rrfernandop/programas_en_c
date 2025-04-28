@@ -4,7 +4,7 @@ int determinante(int matriz[3][3]);
 
 void llenarMatriz(char *nombre, int filas, int columnas, int matriz[filas][columnas]) {
 
- printf("Nombre de la matriz: %s\n", nombre);
+ printf("Nombre de la matriz: %s ", nombre);
 
  for (int i = 0; i < filas; i++) {
 
@@ -28,7 +28,7 @@ void saveMatriz(int filas, int columnas, int matriz[filas][columnas]) {
 
  if (archivo == NULL) {
 
- printf("Error al abrir el archivo.\n");
+ printf("Error al abrir el archivo. ");
 
  return;
 
@@ -44,7 +44,7 @@ void saveMatriz(int filas, int columnas, int matriz[filas][columnas]) {
 
  }
 
- fprintf(archivo, "\n");
+ fprintf(archivo, " ");
 
  }
 
@@ -52,7 +52,7 @@ void saveMatriz(int filas, int columnas, int matriz[filas][columnas]) {
 
  fclose(archivo);
 
- printf("Matriz guardada en 'matriz.txt' exitosamente.\n");
+ printf("Matriz guardada en 'matriz.txt' exitosamente. ");
 
 }
 
@@ -60,9 +60,9 @@ void saveMatriz(int filas, int columnas, int matriz[filas][columnas]) {
 
 void imprimirMatriz(char *nombre, int filas, int columnas, int matriz[filas][columnas]) {
 
- printf("Nombre de la matriz: %s\n", nombre);
+ printf("Nombre de la matriz: %s ", nombre);
 
- printf("Matriz ingresada:\n");
+ printf("Matriz ingresada: ");
 
  for (int i = 0; i < filas; i++) {
 
@@ -72,7 +72,7 @@ void imprimirMatriz(char *nombre, int filas, int columnas, int matriz[filas][col
 
  }
 
- printf("\n");
+ printf(" ");
 
  }
 
@@ -81,9 +81,9 @@ void imprimirMatriz(char *nombre, int filas, int columnas, int matriz[filas][col
 void imprimirDeterminante(char *nombre, int filas, int columnas, int matriz[filas][columnas]) {
         if (filas == 3 && columnas == 3) {
           int det = determinante(matriz);
-          printf("\nDeterminante de %s: %d\n", nombre, det);
+          printf(" Determinante de %s: %d ", nombre, det);
    } else {
-           printf("\nEl programa solo calculará determinante cuando la matriz sea 3x3\n");
+           printf(" El programa solo calculará determinante cuando la matriz sea 3x3 ");
     }
 }
 

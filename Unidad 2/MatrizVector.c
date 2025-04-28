@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void llenarMatriz(int filas, int columnas, int matriz[filas][columnas]) {
-    printf("Llenando la matriz (%dx%d):\n", filas, columnas);
+    printf("Llenando la matriz (%dx%d): ", filas, columnas);
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
             printf("Ingresa el valor para la posicion A[%d][%d]: ", i, j);
@@ -11,7 +11,7 @@ void llenarMatriz(int filas, int columnas, int matriz[filas][columnas]) {
 }
 
 void llenarVector(int tamaño, int vector[tamaño]) {
-    printf("Llenando el vector columna (%dx1):\n", tamaño);
+    printf("Llenando el vector columna (%dx1): ", tamaño);
     for (int i = 0; i < tamaño; i++) {
         printf("Ingresa el valor para la posicion [%d]: ", i); 
         scanf("%d", &vector[i]);
@@ -28,9 +28,9 @@ void multiplicarMatrizPorVector(int filas, int columnas, int matriz[filas][colum
 }
 
 void imprimirResultado(int tamaño, int vector[tamaño]) {
-    printf("Resultado (vector columna):\n");
+    printf("Resultado (vector columna): ");
     for (int i = 0; i < tamaño; i++) {
-        printf("%4d\n", vector[i]);
+        printf("%4d ", vector[i]);
     }
 }
 

@@ -14,52 +14,52 @@ struct Persona {
 int main() {
     int size;
     
-    printf("Ingrese el tamaño del arreglo \n");
+    printf("Ingrese el tamaño del arreglo  ");
     scanf("%d", &size);
 
     struct Persona arregloPersona[size];  // Arreglo de estructuras
 
     // Captura de datos
     for (int i = 0; i < size; i++) {
-        printf("\nIngrese los datos de la persona %d\n", i + 1);
+        printf(" Ingrese los datos de la persona %d ", i + 1);
 
-        printf("Ingrese su nombre: \n");
+        printf("Ingrese su nombre:  ");
         scanf(" %s", arregloPersona[i].nombre);  // Permite espacios
 
-        printf("Ingrese su edad: \n");
+        printf("Ingrese su edad:  ");
         scanf("%d", &arregloPersona[i].edad);
 
-        printf("Ingrese su correo: \n");
+        printf("Ingrese su correo:  ");
         scanf(" %49s", arregloPersona[i].correo);
 
-        printf("Ingrese su telefono: \n");
+        printf("Ingrese su telefono:  ");
         scanf(" %19s", arregloPersona[i].telefono);
 
-        printf("Ingrese su nacionalidad: \n");
+        printf("Ingrese su nacionalidad:  ");
         scanf(" %s", arregloPersona[i].nac);
 
-        printf("Ingrese su genero: \n");
+        printf("Ingrese su genero:  ");
         scanf(" %9s", arregloPersona[i].genero);
 
-        printf("Ingrese su direccion: \n");
+        printf("Ingrese su direccion:  ");
         scanf(" %s", arregloPersona[i].direc);
 
-        printf("Ingrese enfermedad (si aplica): \n");
+        printf("Ingrese enfermedad (si aplica):  ");
         scanf(" %s", arregloPersona[i].enf);
     }
 
     // Imprimir valores del arreglo
-    printf("\nLista de personas registradas:\n");
+    printf(" Lista de personas registradas: ");
     for (int i = 0; i < size; i++) {
-        printf("\nPersona %d:\n", i + 1);
-        printf("Nombre: %s\n", arregloPersona[i].nombre);
-        printf("Edad: %d\n", arregloPersona[i].edad);
-        printf("Correo: %s\n", arregloPersona[i].correo);
-        printf("Telefono: %s\n", arregloPersona[i].telefono);
-        printf("Nacionalidad: %s\n", arregloPersona[i].nac);
-        printf("Genero: %s\n", arregloPersona[i].genero);
-        printf("Direccion: %s\n", arregloPersona[i].direc);
-        printf("Enfermedad: %s\n", arregloPersona[i].enf);
+        printf(" Persona %d: ", i + 1);
+        printf("Nombre: %s ", arregloPersona[i].nombre);
+        printf("Edad: %d ", arregloPersona[i].edad);
+        printf("Correo: %s ", arregloPersona[i].correo);
+        printf("Telefono: %s ", arregloPersona[i].telefono);
+        printf("Nacionalidad: %s ", arregloPersona[i].nac);
+        printf("Genero: %s ", arregloPersona[i].genero);
+        printf("Direccion: %s ", arregloPersona[i].direc);
+        printf("Enfermedad: %s ", arregloPersona[i].enf);
     }
 
     return 0;

@@ -9,7 +9,7 @@ int main() {
     printf("Ingrese la temperatura en grados Celsius: ");
     scanf("%f", &celsius);
 
-    printf("La temperatura en grados Kelvin es: %.2f\n", celsius_a_kelvin(celsius));
+    printf("La temperatura en grados Kelvin es: %.2f ", celsius_a_kelvin(celsius));
 
     return 0;
 }

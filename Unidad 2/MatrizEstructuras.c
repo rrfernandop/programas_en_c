@@ -31,13 +31,13 @@ int main() {
         }
     };
 
-    printf("\n");
+    printf(" ");
 
     for (int i = 0; i < FILAS; i++){
         for (int j = 0; j < COLUMNAS; j++){
             printf("|%15s | %15s | %15s | %15s|\t", matriz[i][j].tipo, matriz[i][j].precio, matriz[i][j].diseno.color, matriz[i][j].diseno.material);
         }
-        printf("\n");
+        printf(" ");
     }
 
     return 0;

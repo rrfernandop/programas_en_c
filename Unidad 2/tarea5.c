@@ -18,11 +18,11 @@ int main() {
     int sig = signo(numero);
     
     if (sig == 1) {
-        printf("El número %d es positivo.\n", numero);
+        printf("El número %d es positivo. ", numero);
     } else if (signo == -1) {
-        printf("El número %d es negativo.\n", numero);
+        printf("El número %d es negativo. ", numero);
     } else {
-        printf("El número es cero.\n");
+        printf("El número es cero. ");
     }
     
     return 0;

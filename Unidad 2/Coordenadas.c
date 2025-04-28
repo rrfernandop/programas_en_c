@@ -29,16 +29,16 @@ struct Triangulo {//segunda estructura
 
 int main() {    
     int opc;//variable que tomara las decisiones del switch 
-    printf("%s","\nSeleccione una figura para realizar calculos:\n");
-    printf("%s","1.- Rectangulo\n");
-    printf("%s","2.- Triangulo\n");
+    printf("%s"," Seleccione una figura para realizar calculos: ");
+    printf("%s","1.- Rectangulo ");
+    printf("%s","2.- Triangulo ");
    
     scanf("%d", &opc);//lectura de la opcion
 
     switch (opc) {
         case 1: { //Case 1 (triangulo)
             struct Rectangulo operacion; //declarar arreglo
-            printf("%s","Coordenadas del rectangulo: \n");//solicitar datos
+            printf("%s","Coordenadas del rectangulo:  ");//solicitar datos
 
             printf("x1: ");
             scanf("%f", &operacion.x1);
@@ -69,15 +69,15 @@ int main() {
 
             operacion.area = operacion.peri1 * operacion.peri2;
 
-            printf("%s","Perimetro del rectangulo: %.2f\n", operacion.perimetro);
+            printf("%s","Perimetro del rectangulo: %.2f ", operacion.perimetro);
 
-            printf("%s","Area del rectangulo: %.2f\n", operacion.area);
+            printf("%s","Area del rectangulo: %.2f ", operacion.area);
 
             break;
         }
         case 2: {
             struct Triangulo calculo;
-            printf("%s","Ingrese las coordenadas de los tres vartices del triangulo: \n");
+            printf("%s","Ingrese las coordenadas de los tres vartices del triangulo:  ");
             printf("%s","x1: ");
             scanf("%f", &calculo.x1);
             printf("%s","y1: ");
@@ -101,19 +101,19 @@ int main() {
             calculo.area = ((calculo.x1*(calculo.y2-calculo.y3))+(calculo.x2*(calculo.y3-calculo.y1))+(calculo.x3*(calculo.y1-calculo.y2)))/2;//Calculamos el area
             if (calculo.area<0){
                 calculo.area = calculo.area * (-1);
-                printf("%s","El perimetro del triangulo: %.2f\n", calculo.perimetro);
-                printf("%s","El area del triangulo es: %.2f\n", calculo.area );
+                printf("%s","El perimetro del triangulo: %.2f ", calculo.perimetro);
+                printf("%s","El area del triangulo es: %.2f ", calculo.area );
             }
             else { 
-            printf("%s","El perimetro del triangulo: %.2f\n", calculo.perimetro);
-            printf("%s","El area del triangulo es: %.2f\n", calculo.area );
+            printf("%s","El perimetro del triangulo: %.2f ", calculo.perimetro);
+            printf("%s","El area del triangulo es: %.2f ", calculo.area );
 
             }
 
             break;
         }
         default:
-            printf("%s","Ingrese una opcion valida\n");
+            printf("%s","Ingrese una opcion valida ");
     }
     
     return 0;

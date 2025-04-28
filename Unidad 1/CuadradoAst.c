@@ -3,7 +3,7 @@ int main (){
     for (int a=0;a<=9;a++){
         printf("%3s","*");
     }
-    printf("\n");
+    printf(" ");
     for(int b=1;b<=7;b++){
         printf("%3s","*");
 
@@ -12,7 +12,7 @@ int main (){
         }
 
         printf("%3s","*");
-        printf("\n");
+        printf(" ");
 
     }
     for (int a=0;a<=9;a++){

@@ -13,7 +13,7 @@ for(int i=3; i>=0; i--){
     }
     //asterisco = asterisco + 2;
     asterisco +=2;
-    printf("\n");
+    printf(" ");
     
 }
 }

@@ -21,7 +21,7 @@ int main() {
     printf("Ingrese un número entre 1 y 10: ");
     scanf("%d", &numero);
 
-    printf("El número es: %s\n", palabra(numero));
+    printf("El número es: %s ", palabra(numero));
 
     return 0;
 }

@@ -16,11 +16,11 @@ int main() {
     scanf("%d", &mayor);
     
     if (menor > mayor) {
-        printf("Error: El primer número debe ser menor que el segundo.\n");
+        printf("Error: El primer número debe ser menor que el segundo. ");
         return 1;
     }
 
-    printf("Resultado %d\n", sumar(menor, mayor));
+    printf("Resultado %d ", sumar(menor, mayor));
 
     return 0;
 }

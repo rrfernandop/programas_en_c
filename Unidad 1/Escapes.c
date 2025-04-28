@@ -1,17 +1,17 @@
 #include <stdio.h>
 int main(){
-    printf("\\a Alarma\n");
-    printf("\\b Retroceso\n");
-    printf("\\f Avance de pagina\n");
-    printf("\\n Retorno de carro y avance de linea\n");
-    printf("\\r Fetorno de carro\n");
-    printf("\\t Tabulacion\n");
-    printf("\\\\ Diagonal invertida\n");
-    printf("\\? Signo de interrogacion\n");
-    printf("\\"" Comillas dobles\n");
-    printf("\\000 Octal\n");
-    printf("\\xhh Hexadecimal\n");
-    printf("\\0 Caracter nulo\n");
+    printf("\\a Alarma ");
+    printf("\\b Retroceso ");
+    printf("\\f Avance de pagina ");
+    printf("\  Retorno de carro y avance de linea ");
+    printf("\\r Fetorno de carro ");
+    printf("\\t Tabulacion ");
+    printf("\\\\ Diagonal invertida ");
+    printf("\\? Signo de interrogacion ");
+    printf("\\"" Comillas dobles ");
+    printf("\\000 Octal ");
+    printf("\\xhh Hexadecimal ");
+    printf("\\0 Caracter nulo ");
 
 
 return 0;

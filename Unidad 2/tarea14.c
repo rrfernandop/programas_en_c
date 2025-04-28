@@ -7,12 +7,12 @@ void ecuacion(float a, float b, float c) {
     if (discriminante > 0) {
         float x1 = (-b + sqrt(discriminante)) / (2 * a);
         float x2 = (-b - sqrt(discriminante)) / (2 * a);
-        printf("Las soluciones son: x1 = %.2f y x2 = %.2f\n", x1, x2);
+        printf("Las soluciones son: x1 = %.2f y x2 = %.2f ", x1, x2);
     } else if (discriminante == 0) {
         float x = -b / (2 * a);
-        printf("La solución única es: x = %.2f\n", x);
+        printf("La solución única es: x = %.2f ", x);
     } else {
-        printf("No hay solucion\n");
+        printf("No hay solucion ");
     }
 }
 
@@ -23,7 +23,7 @@ int main() {
     scanf("%f", &a);
     
     if (a == 0) {
-        printf("No es una ecuación de segundo grado.\n");
+        printf("No es una ecuación de segundo grado. ");
         return 1;
     }
 

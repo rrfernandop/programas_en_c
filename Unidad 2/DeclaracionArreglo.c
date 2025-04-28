@@ -6,7 +6,7 @@ int main() {
 
     // Recorrer e imprimir los valores del arreglo
     for (int i = 0; i < 5; i++) {
-        printf("Valor en posición [%d] es = %d\n", i, numeros[i]);
+        printf("Valor en posición [%d] es = %d ", i, numeros[i]);
     }
 
     return 0;

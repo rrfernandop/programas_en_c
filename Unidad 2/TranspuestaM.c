@@ -10,12 +10,12 @@ void pedirMatriz(int filas, int columnas, int matriz[filas][columnas]) {
 }
 
 void imprimirMatriz(int filas, int columnas, int matriz[filas][columnas]) {
-    printf("Matriz original:\n");
+    printf("Matriz original: ");
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
             printf("%d ", matriz[i][j]);
         }
-        printf("\n");
+        printf(" ");
     }
 }
 
@@ -28,12 +28,12 @@ void trasponerMatriz(int filas, int columnas, int matriz[filas][columnas], int t
 }
 
 void imprimirMatrizTraspuesta(int filas, int columnas, int matriz[columnas][filas]) {
-    printf("Matriz traspuesta:\n");
+    printf("Matriz traspuesta: ");
     for (int i = 0; i < columnas; i++) {
         for (int j = 0; j < filas; j++) {
             printf("%d ", matriz[i][j]);
         }
-        printf("\n");
+        printf(" ");
     }
 }
 

@@ -8,7 +8,7 @@ void imprimirMatriz(int matriz[maximo][maximo], int filas, int columnas) {
         for (int j = 0; j < columnas; j++) {
             printf("%5d ", matriz[i][j]);
         }
-        printf("\n");
+        printf(" ");
     }
 }
 
@@ -39,17 +39,17 @@ int main() {
     int matriz1[maximo][maximo], matriz2[maximo][maximo], resultado[maximo][maximo];
 
 
-    printf("Ingrese los valores de la matriz 1:\n");
+    printf("Ingrese los valores de la matriz 1: ");
     llenarMatriz(matriz1, filas, columnas, '1');  
 
-    printf("Ingrese los valores de la matriz 2:\n");
+    printf("Ingrese los valores de la matriz 2: ");
     llenarMatriz(matriz2, filas, columnas, '2'); 
 
     
     multiplicarMatrices(matriz1, matriz2, resultado, filas, columnas);
 
 
-    printf("Resultado de la multiplicación (elemento por elemento):\n");
+    printf("Resultado de la multiplicación (elemento por elemento): ");
     imprimirMatriz(resultado, filas, columnas);
 
     return 0;

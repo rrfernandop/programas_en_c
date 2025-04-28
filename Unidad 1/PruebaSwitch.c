@@ -1,20 +1,20 @@
 #include <stdio.h>
 int main () {
     int opc;
-    printf("%s\n","Por favor, seleccione una opción");
-    printf("%s\n","1.- Sumar");
-    printf("%s\n","2.- Restar");
+    printf("%s ","Por favor, seleccione una opción");
+    printf("%s ","1.- Sumar");
+    printf("%s ","2.- Restar");
     scanf("%d", & opc);
 
     switch(opc){
         case 1:
-        printf("%s\n","Ha selecionado suma");
+        printf("%s ","Ha selecionado suma");
         break;
         case 2:
-        printf("%s\n","Ha selecionado resta");
+        printf("%s ","Ha selecionado resta");
         break;
         default:
-        printf("%s\n","No ha selecionado una opcion valida");
+        printf("%s ","No ha selecionado una opcion valida");
         break;
     }
    return 0;

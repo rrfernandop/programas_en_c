@@ -19,7 +19,7 @@ int main (){
     }
 
     for (int i = 0; i<3; i++){
-        printf("%d x %d = %d \n",
+        printf("%d x %d = %d  ",
         arreglo[i].valor1,
         arreglo[i].valor2,
         arreglo[i].resultado);

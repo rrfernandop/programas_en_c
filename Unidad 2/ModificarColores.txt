@@ -15,4 +15,4 @@ Opciones de estilo:
 4 Subrayado
 7 Invertir Colores
 
-setColor("\033[1;37m");
+setColor("\033[4;34m");

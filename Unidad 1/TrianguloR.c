@@ -9,7 +9,7 @@ int asteriscos=1;
             printf("%5s", "*");
         }
             asteriscos++;
-            printf("\n");
+            printf(" ");
         }
         return 0;  
 }

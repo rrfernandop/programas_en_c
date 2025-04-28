@@ -43,28 +43,28 @@ float cono(float a, float b) {
 }
 void imprimir(union Resultado resultado, int c) {
     if (c)
-        printf("\nEl area es: %.2f\n", resultado.area);
+        printf(" El area es: %.2f ", resultado.area);
     else
-        printf("\nEl volumen es: %.2f\n", resultado.volumen);
+        printf(" El volumen es: %.2f ", resultado.volumen);
 }
 
 int main (){
     int opc;
     float a, b, c;
     union Resultado resultado[1];
-    printf("%s\n","\nPor favor, seleccione una opción\n");
-    printf("%s\n","Area");
-    printf("%s\n","1.- Cuadrado");
-    printf("%s\n","2.- Rectangulo");
-    printf("%s\n","3.- Triangulo");
-    printf("%s\n","4.- Circulo");
-    printf("%s\n","5.- Trapecio");
-    printf("%s\n","\nVolumen");
-    printf("%s\n","6.- Cubo");
-    printf("%s\n","7.- Prisma");
-    printf("%s\n","8.- Cilindro");
-    printf("%s\n","9.- Esfera");
-    printf("%s\n","10.- Cono");
+    printf("%s "," Por favor, seleccione una opción ");
+    printf("%s ","Area");
+    printf("%s ","1.- Cuadrado");
+    printf("%s ","2.- Rectangulo");
+    printf("%s ","3.- Triangulo");
+    printf("%s ","4.- Circulo");
+    printf("%s ","5.- Trapecio");
+    printf("%s "," Volumen");
+    printf("%s ","6.- Cubo");
+    printf("%s ","7.- Prisma");
+    printf("%s ","8.- Cilindro");
+    printf("%s ","9.- Esfera");
+    printf("%s ","10.- Cono");
     scanf("%d", & opc);
 
     switch(opc){
@@ -75,23 +75,23 @@ int main (){
         imprimir(resultado[0], 1);
         break;
         case 2:
-        printf("Base rectángulo: \n"); 
+        printf("Base rectángulo:  "); 
         scanf("%f", &a);
-        printf("Altura rectángulo: \n");
+        printf("Altura rectángulo:  ");
          scanf("%f", &b);
          resultado[0].area = rectangulo(a, b);
          imprimir(resultado[0], 1);
         break;
         case 3:
-        printf("Base triangulo: \n"); 
+        printf("Base triangulo:  "); 
         scanf("%f", &a);
-        printf("Altura triangulo: \n");
+        printf("Altura triangulo:  ");
          scanf("%f", &b);
         resultado[0].area = triangulo(a, b);
         imprimir(resultado[0], 1);
         break;
         case 4:
-        printf("Radio del círculo: \n"); 
+        printf("Radio del círculo:  "); 
         scanf("%f", &a);
         resultado[0].area = circulo(a);
         imprimir(resultado[0], 1);
@@ -113,19 +113,19 @@ int main (){
         imprimir(resultado[0], 0);
         break;
         case 7:
-        printf("Base prisma: \n"); 
+        printf("Base prisma:  "); 
         scanf("%f", &a);
-        printf("Altura prisma: \n");
+        printf("Altura prisma:  ");
          scanf("%f", &b);
-         printf("Profundidad prisma: \n");
+         printf("Profundidad prisma:  ");
          scanf("%f", &c);
          resultado[0].volumen = prisma(a, b, c);
          imprimir(resultado[0], 0);
         break;
         case 8:
-        printf("Radio cilindro: \n"); 
+        printf("Radio cilindro:  "); 
         scanf("%f", &a);
-        printf("Altura cilindro: \n");
+        printf("Altura cilindro:  ");
          scanf("%f", &b);
          resultado[0].volumen = cilindro(a, b);
          imprimir(resultado[0], 0);
@@ -137,15 +137,15 @@ int main (){
         imprimir(resultado[0], 0);
         break;
         case 10:
-        printf("Radio conop: \n"); 
+        printf("Radio conop:  "); 
         scanf("%f", &a);
-        printf("Altura cono: \n");
+        printf("Altura cono:  ");
          scanf("%f", &b);
          resultado[0].volumen = cono(a, b);
          imprimir(resultado[0], 0);
         break;
         default:
-        printf("%s\n","No ha selecionado una opcion valida");
+        printf("%s ","No ha selecionado una opcion valida");
         break;
     }
     
