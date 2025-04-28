@@ -9,6 +9,7 @@ void setColor(const char* color) {
     printf("%s", color);
 }
 
+
 int main() {
     float num1, num2;
     int ope;
