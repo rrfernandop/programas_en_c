@@ -36,7 +36,7 @@ void conectar() {
 
  if (mysql_real_connect(con, "localhost", "root", "rootroot", "basedatos", 
 
- 8889, "/Applications/MAMP/tmp/mysql/mysql.sock.lock", 0) == NULL) {
+ 8889, "/Applications/MAMP/tmp/mysql/mysql.sock", 0) == NULL) {
 
  finish_with_error();
 
@@ -200,7 +200,7 @@ sudo apt-get install libmysqlclient-dev
 # For macOS, use Homebrew
 
 
-
+ps aux | grep mysqld
 brew install mysql-client
 
 
@@ -215,7 +215,7 @@ gcc -o Demo /Users/nittos/Documents/GitHub/C_Programs/4.BaseDatos/Demo.c -I/usr/
 
 
 
-gcc -o Demo Demo.c \
+gcc -o 5ConexionBD 5ConexionBD.c \
 
  -I/usr/local/opt/mysql-client/include \
 
@@ -223,6 +223,15 @@ gcc -o Demo Demo.c \
 
  -lmysqlclient
 
+gcc -o 5ConexionBD 5ConexionBD.c \
+
+ -I/Applications/MAMP/Library/include \
+
+ -L/Applications/MAMP/Librarylib \
+
+ -lmysqlclient
+
+gcc -o 5ConexionBD.out 5ConexionBD.c `mysql_config --libs`
 
 
 chmod +x Demo
