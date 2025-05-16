@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-long sumaEnteros(int number) {
+int sumaEnteros(int number) {
     if (number == 1)
         return 1;
     else
